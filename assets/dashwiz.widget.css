@@ -1,0 +1,99 @@
+article.sortable-grid {
+  min-height: 30px;
+}
+
+/*
+* FULL SCREEN
+*/
+body.nooverflow {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+#dashwiz-fullscreen-mode {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+}
+
+#dashwiz-fullscreen-mode .dashwiz {
+  margin: 0;
+  -moz-border-radius: 0;
+  -khtml-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+#dashwiz-fullscreen-mode .dashwiz > .dashwiz-body {
+  overflow-y: scroll;
+  -moz-border-radius: 0;
+  -khtml-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+#dashwiz-fullscreen-mode .dashwiz > .dashwiz-header {
+  cursor: default;
+}
+/******************
+
+/*
+* SORTABLE
+*/
+.dashwiz-placeholder {
+  -moz-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  margin-bottom: 28px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.dashwiz-placeholder {
+  background-color: #FFC;
+  border: 1px dashed #A7A7A7;
+}
+
+.ui-sortable .dashwiz-sortable > .dashwiz-header {
+  cursor: move;
+}
+
+.dashwiz .dashwiz-header {
+    position: relative;    
+}
+
+.dashwiz .dashwiz-loader {
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    left: 2px;
+    display: none;
+}
+
+.dashwiz-controls {
+    margin-top: -6px;
+    margin-right: -10px;
+    background-color: inherit;
+}
+
+.dashwiz-controls .btn {
+    background-color: transparent !important;
+}
+.dashwiz-controls .btn:hover {
+    color: inherit !important;
+}
+
+.dashwiz-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
