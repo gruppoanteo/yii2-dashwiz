@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist hal/yii2-dashwiz "*"
+php composer.phar require --prefer-dist anteo/yii2-dashwiz "*"
 ```
 
 or add
 
 ```
-"hal/yii2-dashwiz": "*"
+"anteo/yii2-dashwiz": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -28,7 +28,7 @@ Usage
 Once the extension is installed:
 
 ```php
-./yii migrate --migrationPath=@vendor/hal/yii2-dashwiz/migrations
+./yii migrate --migrationPath=@vendor/anteo/yii2-dashwiz/migrations
 ```
 
 Look to DashwizGrid.php for sample code.
@@ -36,8 +36,8 @@ Look to DashwizGrid.php for sample code.
 Example for dashboard view:
 
 ```php
-use hal\dashwiz\DashwizGrid;
-use hal\dashwiz\DashwizWidget;
+use anteo\dashwiz\DashwizGrid;
+use anteo\dashwiz\DashwizWidget;
 
 <h1>DASHBOARD</h1>
 
