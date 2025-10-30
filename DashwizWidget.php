@@ -1,6 +1,6 @@
 <?php
 
-namespace hal\dashwiz;
+namespace anteo\dashwiz;
 
 use Yii;
 use yii\base\Widget;

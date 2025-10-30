@@ -1,8 +1,8 @@
 <?php
 
-namespace hal\dashwiz;
+namespace anteo\dashwiz;
 
-use hal\dashwiz\models\Dashwiz;
+use anteo\dashwiz\models\Dashwiz;
 use Yii;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
@@ -17,8 +17,8 @@ use yii\helpers\Url;
  * Usage:
  * ```html
  * <?php
- * use hal\dashwiz\DashwizGrid;
- * use hal\dashwiz\DashwizWidget;
+ * use anteo\dashwiz\DashwizGrid;
+ * use anteo\dashwiz\DashwizWidget;
  * ?>
  * 
  * <?php DashwizGrid::begin() ?>
@@ -50,7 +50,7 @@ use yii\helpers\Url;
  * (see registerScript function).
  * It can be attached to controller:
  * ```php
- * use hal\dashwiz\SaveAction;
+ * use anteo\dashwiz\SaveAction;
  * 
  * public function actions()
  * {

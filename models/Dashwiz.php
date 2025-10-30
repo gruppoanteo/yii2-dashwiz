@@ -1,6 +1,6 @@
 <?php
 
-namespace hal\dashwiz\models;
+namespace anteo\dashwiz\models;
 
 use yii\db\ActiveRecord;
 

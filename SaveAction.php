@@ -1,8 +1,8 @@
 <?php
 
-namespace hal\dashwiz;
+namespace anteo\dashwiz;
 
-use hal\dashwiz\models\Dashwiz;
+use anteo\dashwiz\models\Dashwiz;
 use Yii;
 use yii\base\Action;
 use yii\base\Exception;
@@ -19,7 +19,7 @@ use yii\web\Response;
  * public function actions()
  * {
  *      return [
- *          'save' => '\hal\dashwiz\SaveAction',
+ *          'save' => '\anteo\dashwiz\SaveAction',
  *      ];
  * }
  * ```

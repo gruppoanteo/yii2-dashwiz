@@ -1,6 +1,6 @@
 <?php
 
-namespace hal\dashwiz;
+namespace anteo\dashwiz;
 
 use yii\web\AssetBundle;
 
@@ -19,9 +19,9 @@ class DashwizAsset extends AssetBundle
     ];
 	public $depends = [
 		'yii\bootstrap\BootstrapPluginAsset',
-        'hal\dashwiz\HandlebarsAsset',
-		'hal\dashwiz\BootstrapSweetalertAsset',
-		'hal\dashwiz\SortableAsset'
+        'anteo\dashwiz\HandlebarsAsset',
+		'anteo\dashwiz\BootstrapSweetalertAsset',
+		'anteo\dashwiz\SortableAsset'
 	];
     
     public function init()
