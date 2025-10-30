@@ -20,9 +20,9 @@
         "bower-asset/bootstrap-sweetalert" : "~0.1"
     },
     "autoload": {
-        "psr-4": {"hal\\dashwiz\\": ""}
+        "psr-4": {"anteo\\dashwiz\\": ""}
     },
     "extra": {
-        "bootstrap": "hal\\dashwiz\\Bootstrap"
+        "bootstrap": "anteo\\dashwiz\\Bootstrap"
     }
 }
