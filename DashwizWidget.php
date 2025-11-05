@@ -100,7 +100,7 @@ class DashwizWidget extends Widget
     protected function renderHeader()
     {
         $subtitle = ($this->subtitle != "") ? $this->subtitle : '';
-        $controls = '';
+        $controls = [];
         $itemOptions = ArrayHelper::remove($this->controlOptions, 'itemOptions', []);
         Html::addCssClass($itemOptions, ['widget' => 'btn btn-sm']);
         Html::addCssClass($this->controlOptions, ['widget' => 'pull-right']);

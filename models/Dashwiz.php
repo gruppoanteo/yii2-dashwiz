@@ -40,7 +40,7 @@ class Dashwiz extends ActiveRecord
     public function afterFind()
     {
         parent::afterFind();
-        $this->settings = unserialize($this->settings);
-        $this->positions = unserialize($this->positions);
+        $this->settings = $this->settings ? unserialize($this->settings) : null;
+        $this->positions = $this->positions ? unserialize($this->positions) : null;
     }
 }

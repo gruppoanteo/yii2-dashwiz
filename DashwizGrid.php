@@ -182,7 +182,7 @@ class DashwizGrid extends \yii\base\Widget
             $this->layout = Yii::$app->controller->route;
         }
         
-        if ($this->deleteMessage == '') {
+        if (empty($this->deleteMessage)) {
             $this->deleteMessage = Yii::t('dashwiz', 'Are you sure you want to remove this widget?');
         }
 
@@ -245,6 +245,7 @@ class DashwizGrid extends \yii\base\Widget
             }
             $options = empty($this->clientOptions) ? '' : Json::encode($this->clientOptions);
         }
+        $js = [];
         $js[] = "$('#{$this->id}').dashwiz($options);";
         
         if ($this->controlsTooltip !== false) {
