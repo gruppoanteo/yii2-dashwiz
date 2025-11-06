@@ -130,6 +130,8 @@ class DashwizWidget extends Widget
         if (!empty($controls)) {
             $tag = ArrayHelper::remove($this->controlOptions, 'tag', 'div');
             $controls = Html::tag($tag, implode("\n", $controls), $this->controlOptions);
+        } else {
+            $controls = '';
         }
         
         if (!isset($this->title, $subtitle) && !empty($controls)) {
