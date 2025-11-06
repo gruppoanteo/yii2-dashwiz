@@ -53,6 +53,11 @@ class SaveAction extends Action
         if (!$reset) {
             Yii::$app->getResponse()->format = Response::FORMAT_JSON;
             $settings = Json::decode($settings);
+            
+            // Ensure $settings is an array after JSON decode
+            if (!is_array($settings)) {
+                $settings = [];
+            }
 
             if ($this->saveSettings($layout, Yii::$app->user->id, $settings)) {
                 return ['message' => 'Save Successfully'];
@@ -89,11 +94,14 @@ class SaveAction extends Action
                 $model->layout = $layout;
                 $model->user_id = $userId;
             }
-            if (isset($settings['widget'])) {
-                $model->settings = $settings;
-            }
-            if (isset($settings['grid'])) {
-                $model->positions = $settings;
+            // Ensure $settings is an array before accessing it as array
+            if (is_array($settings)) {
+                if (isset($settings['widget'])) {
+                    $model->settings = $settings;
+                }
+                if (isset($settings['grid'])) {
+                    $model->positions = $settings;
+                }
             }
             $model->save(false);
         } catch (\yii\db\Exception $e) {

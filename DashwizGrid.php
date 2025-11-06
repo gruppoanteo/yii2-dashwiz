@@ -186,6 +186,11 @@ class DashwizGrid extends \yii\base\Widget
             $this->deleteMessage = Yii::t('dashwiz', 'Are you sure you want to remove this widget?');
         }
 
+        // Initialize clientOptions as array if it's false
+        if ($this->clientOptions === false) {
+            $this->clientOptions = [];
+        }
+
         if ($this->useModel) {
             $dashwiz = Yii::createObject(Dashwiz::class);
             $model = $dashwiz->findOne([
@@ -234,6 +239,16 @@ class DashwizGrid extends \yii\base\Widget
     {
         $view = $this->getView();
         DashwizAsset::register($view);
+
+        // Ensure clientOptions is an array
+        if ($this->clientOptions === false) {
+            $this->clientOptions = [];
+        }
+        
+        // Ensure clientEvents is an array
+        if ($this->clientEvents === false) {
+            $this->clientEvents = [];
+        }
 
         $options = '';
         if ($this->clientOptions !== false) {
